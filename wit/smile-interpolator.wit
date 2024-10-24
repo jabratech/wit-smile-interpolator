@@ -1,0 +1,7 @@
+interface handler {
+    use jabratech:common/types.{response};
+      use types.{smile-response,request};
+    
+      get-smile:  func(request: request) -> result<smile-response, response>;
+  
+}

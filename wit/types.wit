@@ -1,0 +1,22 @@
+interface types {
+    use jabratech:common/types.{currency};
+    record request{
+        currency: currency,
+        date: option<string>,
+    }
+
+    record smile{
+        expiry: string,
+        name: string,
+        smile: f64,
+        adj: f64,
+        final: f64
+    }
+
+    record smile-response{
+        code: s16,
+        message: string,
+        data: list<smile>,
+    }
+
+}

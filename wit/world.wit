@@ -1,0 +1,5 @@
+package jabratech:smile-interpolator;
+
+world smile-interpolator{
+    export handler;
+}
