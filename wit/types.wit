@@ -9,12 +9,17 @@ interface types {
         three-delta-points: list<f64>
     }
 
-    record smile{
+    record smile-data{
         expiry: string,
         name: string,
         smile: f64,
         adj: f64,
         final-value: f64
+    }
+
+    record smile{
+        name: string,
+        smile-data: list<smile-data>
     }
 
     record smile-response{
