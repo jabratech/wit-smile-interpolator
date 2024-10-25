@@ -14,7 +14,7 @@ interface types {
         name: string,
         smile: f64,
         adj: f64,
-        final: f64
+        final-value: f64
     }
 
     record smile-response{
