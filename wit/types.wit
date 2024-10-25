@@ -1,8 +1,12 @@
 interface types {
     use jabratech:common/types.{currency};
+
     record request{
         currency: currency,
-        date: option<string>,
+        alpha: f64,
+        rho: f64,
+        nu: f64,
+        three-delta-points: list<f64>
     }
 
     record smile{
